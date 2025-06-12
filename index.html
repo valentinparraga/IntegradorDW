@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surftrip | Inicio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/mediaqueries.css">
+    <link rel="stylesheet" href="/styles/animations.css">
+    <!-- ICONO BROWSER -->
+    <link rel="shortcut icon" href="/assets/logo23.png">
+
+</head>
+<body id="body">
+    <!-- Navbar -->
+    <nav class="navbar"
+         style=" opacity: 0;
+                 transform: translateY(-100%);
+                 animation: slideDown 1s ease-out 0.8s forwards;">
+        <header><a href="#body"><h1>Surf <br> Trip</h1></a></header>
+        <div class="navigation">
+            <label for="nav-toggle"
+                   class="nav-label"
+                   style=" background-color: #FBFBFF; 
+                        max-width: 12%;
+                        resize: none;
+                        align-items: center;">
+                   <img src="/assets/burger-menu.png" alt="burger menu icon" style="width: 100%;">
+            </label>
+            <input type="checkbox" id="nav-toggle">
+            <ul class="nav-buttons">
+                <li><a href="#body">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#trips">Viajes</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="login-buttons">
+                <button class="login-btn"><a href="login.html"   >Ingresar</a></button>
+                <button class="login-btn"><a href="register.html">Registrarse</a></button>
+        </div>
+    </nav>
+    <!-- Hero -->
+    <main class="hero" style="position: relative;">
+        <img style="width: 100%;" src="/assets/main-hero-img cropped.png" alt="Main background image"/>
+        <div class="hero-text">
+          <h2 class="hero-title">Tu próxima ola te espera. <br> <span>Nosotros te preparamos.</span>  </h2>
+        </div>
+    </main>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-text">
+            <h3 class="section-title" id="about-title">Surf sin límites</h3>
+            <p>Conocé todo lo que tenemos para vos.</p>
+        </div>
+        <div class="about-cards-container">
+            <div class="about-card">
+                <!-- <h4 class="about-card-title"><small>🏄</small>Tablas</h4> -->
+                <img src="/assets/card icons/surfboard.svg" alt="benefit">
+                <p class="about-card-text">Los mejores viajes y las mejores clases!</p>
+            </div>
+            <div class="about-card">
+                <!-- <h4 class="about-card-title"><small>🏄</small>Trajes</h4> -->
+                <img src="/assets/card icons/wave.svg" alt="benefit">
+                <p class="about-card-text">Para principiantes y también para los más expertos!</p>
+            </div>
+            <div class="about-card">
+                <!-- <h4 class="about-card-title"><small>🏄</small>Accesorios</h4> -->
+                <img src="/assets/card icons/shaka-svgrepo-com.svg" alt="benefit">
+                <p class="about-card-text">La mejor atención personalizada y soporte 24/7!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Productos -->
+    <section class="trips" id="trips">
+        <h2 class="section-title" id="trips-title">Nuestros viajes</h2>
+        <p style="width: 95%">Organizamos surf trips a destinos increíbles, tanto para los que recién empiezan como para los más pro!</p>
+    <div class="trips-cards-container">
+        <div class="trip-card">
+            <h4 class="trip-card-title">Mar del Plata, Argentina</h4>
+            <img src="/assets/spots/mdp.jpg" alt="Trip Spot">
+            <p class="trip-card-coords">38°00′00″S, 57°33′00″W</p>
+            <span class="trip-card-difficulty-level">
+                Nivel
+                <div class="custom-meter">
+                  <div class="custom-meter-bar noob" style="width: 10%"></div>
+                </div>
+            </span>
+            <small class="trip-card-next-date">
+                <p>Próxima salida: nov. 2025</p>
+                <a href="#">Más info</a>
+            </small>
+        </div>
+        <div class="trip-card">
+            <h4 class="trip-card-title">Mavericks, California</h4>
+            <img src="/assets/spots/mavericks.jpg" alt="Trip Spot">
+            <p class="trip-card-coords">37°29′42″N, 122°30′23″W</p>
+            <span class="trip-card-difficulty-level">
+                Nivel
+                <div class="custom-meter">
+                  <div class="custom-meter-bar advanced" style="width: 50%"></div>
+                </div>
+            </span>
+            <small class="trip-card-next-date">
+                <p>Próxima salida: oct. 2025</p>
+                <a href="#">Más info</a>
+            </small>
+        </div>
+        <div class="trip-card">
+            <h4 class="trip-card-title">Cloudbreak, Fiji</h4>
+            <img src="/assets/spots/cloudbreak.jpg" alt="Trip Spot">
+            <p class="trip-card-coords">17°50′05″S, 177°11′46″E</p>
+            <span class="trip-card-difficulty-level">
+                Nivel
+                <div class="custom-meter">
+                  <div class="custom-meter-bar advanced" style="width: 65%"></div>
+                </div>
+            </span>
+            <small class="trip-card-next-date">
+                <p>Próxima salida: ago. 2025</p>
+                <a href="#">Más info</a>
+            </small>
+        </div>
+        <div class="trip-card">
+            <h4 class="trip-card-title">Mentawai, Indonesia</h4>
+            <img src="/assets/spots/mentawai.jpg" alt="Trip Spot">
+            <p class="trip-card-coords">2°00′00″S, 99°30′00″E</p>
+            <span class="trip-card-difficulty-level">
+                Nivel
+                <div class="custom-meter">
+                  <div class="custom-meter-bar pro" style="width: 80%"></div>
+                </div>
+            </span>
+            <small class="trip-card-next-date">
+                <p>Próxima salida: ene. 2026</p>
+                <a href="#">Más info</a>
+            </small>
+        </div>
+        <div class="trip-card">
+            <h4 class="trip-card-title">Nazaré, Portugal</h4>
+            <img src="/assets/spots/nazare.jpg" alt="Trip Spot">
+            <p class="trip-card-coords">39°36′52″N, 9°04′26″W</p>
+            <span class="trip-card-difficulty-level">
+                Nivel
+                <div class="custom-meter">
+                  <div class="custom-meter-bar pro" style="width: 95%"></div>
+                </div>
+            </span>
+            <small class="trip-card-next-date">
+                <p>Próxima salida: jul. 2025</p>
+                <a href="#">Más info</a>
+            </small>
+        </div>
+        <div class="trip-card">
+            <h4 class="trip-card-title">Teahupo'o, Tahití</h4>
+            <img src="/assets/spots/teahupo.jpg" alt="Trip Spot">
+            <p class="trip-card-coords">17°50′33″S, 149°15′38″W</p>
+            <span class="trip-card-difficulty-level">
+                Nivel
+                <div class="custom-meter">
+                  <div class="custom-meter-bar pro" style="width: 100%"></div>
+                </div>
+            </span>
+            <small class="trip-card-next-date">
+                <p>Próxima salida: mar. 2026</p>
+                <a href="#">Más info</a>
+            </small>
+        </div>
+    </div>
+    </section>
+    <!-- Efecto blur antes de la sección de contacto -->
+    <div id="contact-blur" style="border: none; z-index: -1; height: 10px; background: linear-gradient(to bottom, #badde8 0%, #2d334a 100%);"></div>
+    <!-- Contacto -->
+    <section class="contact" id="contact">
+        <h3 class="section-title" id="contact-title">Contactanos</h3>
+        <div class="contact-container">
+            
+            <div class="contact-map-container">
+                <h5>Encontranos</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3902.2278278770777!2d-157.69628759979537!3d21.337994223350037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sar!4v1748539694596!5m2!1ses-419!2sar" 
+                        title="Mapa"
+                        style="
+                        border: 0;
+                        width: 85%;
+                        height: 100%;
+                        max-height: 800px;"
+                        allowfullscreen="true"
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contact-form-container">
+                <h5>Escribinos</h5>
+                <form class="contact-form" autocomplete="off">
+                    <input required class="contact-input" type="text" placeholder="Nombre">
+                    <label for="motivo"> 
+                        <select id="motivo" class="contact-input" placeholder="Motivo">
+                            <option value="motivo" disabled selected>Seleccionar un motivo</option>
+                            <option value="quejas">Quejas</option>
+                            <option value="sugerencias">Sugerencias</option>
+                            <option value="soporte">Soporte</option>
+                            <option value="trabaja">Trabajá con nosotros</option>
+                        </select>
+                    </label> 
+                    <input required class="contact-input" type="text" placeholder="Asunto">
+                    <input required class="contact-input" type="text" placeholder="Email">
+                    <textarea class="contact-message" id="message" placeholder="Escriba su mensaje."></textarea>
+                <button type="submit" class="contact-btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+        
+        
+    </section>
+    <!-- Footer -->
+    <footer>
+        <small>Hecho por: Valentin Párraga.</small>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* MEDIA QUERIES */
+@media (max-width: 576px){
+  .hero-title{ 
+    font-size: 1em;
+    line-height: 1em;
+  }
+  .hero-title span{
+    font-size: 1em;
+  }
+}
+/* BREAKPOINT PANTALLAS MÁS CHICAS QUE 992PX */
+@media (max-width: 992px){
+  .about-cards-container{
+    width: 85%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+/*BREAKPOINT PANTALLAS MÁS GRANDES QUE 768PX
+CAMBIO DE IMAGEN Y SE OCULTA MENU HAMBURGUESA*/
+@media (min-width: 768px) {
+  .navigation{
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  .login-buttons{
+    flex-direction: row;
+  }
+  #nav-toggle,
+  .nav-label img {
+    display: none;
+  }
+  .hero {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-content: center;
+  }
+  .hero-title{
+    font-size: 1.5em;
+  }
+  .trip-card img{
+    max-width: 650px;
+  }
+}
+/* BREAKPOINT PANTALLAS MÁS GRANDES QUE 992PX */
+@media (min-width: 992px){
+  .hero-title{
+    font-size: 2em;
+  }
+  .contact-container{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #contact-title{
+    display: inline;
+  }
+}

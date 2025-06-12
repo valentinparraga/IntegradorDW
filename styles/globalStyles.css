@@ -1,0 +1,89 @@
+/* FUENTE GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); 
+/* FUENTE DEL HERO */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--text-white);
+    font-family: "DM Sans", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+  --title: #272343;
+  --text: #2d334a; 
+  --tertiary: #badde8;
+  --button: #ff7403;
+  --main-color: #feffff;
+  --secondary-color: #e3f6f5;
+  --text-white: #FBFBFF;
+  --text-black: #040F16;
+}
+
+body{
+  background-color: var(--tertiary);
+}
+
+button{
+  color: var(--text);
+  background-color: var(--button);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 80%;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+header h1 {
+  text-align: center;
+  text-transform: capitalize;
+  color:var(--title);
+  font-family: "Instrument Serif", serif;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+hr{
+  border: 1px solid var(--button);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+li{
+  display: inline;
+}
+textarea {
+  resize: none;
+}
+nav {
+  border: 1px solid var(--button); 
+  background-color: var(--tertiary);
+}
+iframe {
+ max-width: 100%;
+ height: auto;
+}
+label, select, option{
+  color: var(--title);
+  text-align: center;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--text-white);
+}
+.section-title{
+  margin-top: 1.5%;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--title);
+  text-align: center;
+}
