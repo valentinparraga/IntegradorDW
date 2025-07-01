@@ -49,6 +49,7 @@ CAMBIO DE IMAGEN Y SE OCULTA MENU HAMBURGUESA*/
   .trip-card img{
     max-width: 650px;
   }
+
 }
 /* BREAKPOINT PANTALLAS MÁS GRANDES QUE 992PX */
 @media (min-width: 992px){
@@ -62,5 +63,12 @@ CAMBIO DE IMAGEN Y SE OCULTA MENU HAMBURGUESA*/
   }
   #contact-title{
     display: inline;
+  }
+  #products-cards-container{
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  .product-card{
+    width: 30%;
   }
 }
