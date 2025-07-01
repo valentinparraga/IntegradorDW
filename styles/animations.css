@@ -28,7 +28,6 @@
   0% {
     opacity: 0;
     margin-right: 100%;
-    width: -100%;
   }
   50% {
     opacity: 0.5;
