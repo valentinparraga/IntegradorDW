@@ -10,31 +10,38 @@
     <link rel="stylesheet" href="/styles/mediaqueries.css">
     <link rel="stylesheet" href="/styles/loginStyles.css">
     <!-- ICONO BROWSER -->
-    <link rel="shortcut icon" href="/assets/wave-icon.png">
+    <link rel="shortcut icon" href="/assets/nav icons/logo.png">
 
 </head>
 <body>
-    <header><h1>SurfTrip</h1></header>   
     <main class="login-page">
+        <img src="/assets/nav icons/logo.png" alt="Logo de la página" class="nav-logo" style="align-self: center;">
         <h1>Registrate</h1>
-        <form class="form-box">
-
-            <label for="nombre"></label>
-            <input type="text" name="email" placeholder="Ingresa tu nombre">
-            <label for="apellido"></label>
-            <input type="text" name="email" placeholder="Ingresa tu apellido">
-            <label for="email"></label>
-            <input type="text" name="email" placeholder="Ingresa tu mail">
-            <label for="password"></label>
-            <input type="password" name="password" placeholder="Ingresa tu contraseña">
-
+        <form class="form-box" id="register-form">
+            <span class="form-field">
+                <input class="form-input" id="name-input" type="text" name="name" autocomplete="off" placeholder="Ingresa tu nombre">
+                <small></small>
+            </span>
+            <span class="form-field">
+                <input class="form-input" id="surname-input" type="text" name="surname" autocomplete="off" placeholder="Ingresa tu apellido">
+                <small></small>
+            </span>
+            <span class="form-field">
+                <input class="form-input" id="email-input" type="text" name="email" autocomplete="off" placeholder="Ingresa tu mail">
+                <small></small>
+            </span>
+            <span class="form-field">
+                <input class="form-input" id="password-input" type="password" name="password" autocomplete="off" placeholder="Ingresa tu contraseña">                
+                <small></small>
+            </span>
             <button type="submit" class="form-btn">Enviar</button>
-            <span>Ya tenés cuenta? <a href="login.html" style="font-weight: 800; text-decoration: underline;">Iniciá sesión</a> </span>
         </form>
+        <span>Ya tenés cuenta? <a href="login.html" style="font-weight: 800; text-decoration: underline;">Iniciá sesión</a> </span>
         <h3 class="goback">
             <a href="index.html">Regresar al inicio</a>
         </h3>
     </main>
 
 </body>
+<script type="module" src="js/registerValidation.js"></script>
 </html>

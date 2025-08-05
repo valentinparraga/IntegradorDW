@@ -55,7 +55,7 @@
 }
 
 header h1:hover,
-.nav-buttons a:hover{
+.nav-links a:hover{
   color: var(--button);
 }
 .login-btn:hover{
@@ -63,7 +63,7 @@ header h1:hover,
   box-shadow: 0 0 10px rgb(255, 223, 120);
   border: 1px solid red;
 }
-.hero {
+#hero {
   animation-name: fadeIn;
   animation-duration: 0.8s;
   animation-timing-function: ease-in;
@@ -90,7 +90,7 @@ header h1:hover,
   transition-property: all;
   transition-duration: 1.5ms;
   transition-timing-function: ease-in-out;
-  background-color: var(--button);
+  background-color: var(--button);  
 }
 #contact{
   animation-name: slideUp;

@@ -10,27 +10,27 @@
     <link rel="stylesheet" href="/styles/mediaqueries.css">
     <link rel="stylesheet" href="/styles/loginStyles.css">
     <!-- ICONO BROWSER -->
-    <link rel="shortcut icon" href="/assets/wave-icon.png">
+    <link rel="shortcut icon" href="/assets/nav icons/logo.png">
 
 </head>
 <body>
-    <header><h1>SurfTrip</h1></header>
+
     <main class="login-page">
+        <img src="/assets/nav icons/logo.png" alt="Logo de la página" class="nav-logo" style="align-self: center;">
         <h1>Iniciá sesión</h1>
-        <form class="form-box">
+        <form class="form-box" id="login-form">
 
-            <label for="email"></label>
-            <input type="text" name="email" placeholder="Ingresa tu mail">
-            <label for="password"></label>
-            <input type="password" name="password" placeholder="Ingresa tu contraseña">
+            <input class="form-input" id="email-input" type="text" name="email" autocomplete="off" placeholder="Ingresa tu mail">
+            <input class="form-input" id="password-input" type="password" name="password" autocomplete="off" placeholder="Ingresa tu contraseña">
+            <small id="form-feedback"></small>
 
-            <button type="submit" class="form-btn">Enviar</button>
-
-            <span>No tenés cuenta? <a href="register.html" style="font-weight: 800; text-decoration: underline;">Registrate</a> </span>
+            <button type="submit" class="form-btn" id="send-form-btn">Enviar</button>
         </form>
+        <span>No tenés cuenta? <a href="register.html" style="font-weight: 800; text-decoration: underline;">Registrate</a> </span>
         <h3 class="goback">
             <a href="index.html">Regresar al inicio</a>
         </h3>
     </main>
 </body>
+    <script type="module" src="/js/loginValidation.js"></script>
 </html>

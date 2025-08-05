@@ -1,16 +1,16 @@
 /* MEDIA QUERIES */
-@media (max-width: 576px){
-  .hero-title{ 
+@media (max-width: 576px) {
+  .hero-title {
     font-size: 1em;
     line-height: 1em;
   }
-  .hero-title span{
+  .hero-title span {
     font-size: 1em;
   }
 }
 /* BREAKPOINT PANTALLAS MÁS CHICAS QUE 992PX */
-@media (max-width: 992px){
-  .about-cards-container{
+@media (max-width: 992px) {
+  .about-cards-container {
     width: 85%;
     flex-wrap: wrap;
     align-content: center;
@@ -21,54 +21,102 @@
 /*BREAKPOINT PANTALLAS MÁS GRANDES QUE 768PX
 CAMBIO DE IMAGEN Y SE OCULTA MENU HAMBURGUESA*/
 @media (min-width: 768px) {
-  .navigation{
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-  }
-  .nav-buttons {
-    display: flex;
-    flex-direction: row;
-  }
-  .login-buttons{
-    flex-direction: row;
-  }
-  #nav-toggle,
-  .nav-label img {
+  .nav-menu-img {
     display: none;
   }
-  .hero {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  align-content: center;
+  .nav-item-list {
+    flex-direction: row;
+    justify-content: space-around;
   }
-  .hero-title{
+  #nav-container{
+    flex-direction: row;
+    display: flex;
+  }
+  #hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  .hero-title {
     font-size: 1.5em;
   }
-  .trip-card img{
+  .trip-card img {
     max-width: 650px;
   }
-
-}
-/* BREAKPOINT PANTALLAS MÁS GRANDES QUE 992PX */
-@media (min-width: 992px){
-  .hero-title{
-    font-size: 2em;
-  }
-  .contact-container{
-    width: 100%;
+  nav {
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    padding: 0 15px;
   }
-  #contact-title{
-    display: inline;
+  .nav-icons {
+    display: none;
   }
-  #products-cards-container{
-    flex-flow: wrap;
-    justify-content: center;
+  .nav-auth-container > .nav-btn.nav-cart {
+    display: block;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
   }
-  .product-card{
-    width: 30%;
+  .nav-links {
+    flex-direction: row;
+    margin: 0;
+    font-size: 1em;
+    width: 100%;
+    gap: 2%;
+  }
+  .nav-auth-container {
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .nav-auth-container a {
+    width: auto;
+  }
+  #cart-container {
+    padding: 5%;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+  }
+  .cart-product-details .cart-controls {
+    flex-direction: column;
+  }
+  .cart-controls {
+    display: flex;
+    gap: 5px;
+  }
+  .footer-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 1fr);   
+}
+  /* BREAKPOINT PANTALLAS MÁS GRANDES QUE 992PX */
+  @media (min-width: 992px) {
+    .hero-title {
+      font-size: 2em;
+    }
+    .contact-container {
+      width: 100%;
+      justify-content: space-between;
+    }
+    #contact-title {
+      display: inline;
+    }
+    #products-cards-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      width: 100%;
+    }
+    .product-card {
+      width: 30%;
+    }
   }
 }

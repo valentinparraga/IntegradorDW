@@ -1,85 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Surftrip | Inicio</title>
-
     <!-- CSS -->
-    <link rel="stylesheet" href="/styles/globalStyles.css">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="stylesheet" href="/styles/mediaqueries.css">
-    <link rel="stylesheet" href="/styles/animations.css">
+    <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/mediaqueries.css" />
+    <link rel="stylesheet" href="/styles/animations.css" />
     <!-- ICONO BROWSER -->
-    <link rel="shortcut icon" href="/assets/logo23.png">
-
-</head>
-<body id="body">
+    <link rel="shortcut icon" href="/assets/nav icons/logo.png" />
+  </head>
+  <body id="body">
     <!-- Navbar -->
-    <nav class="navbar"
-         style=" opacity: 0;
-                 transform: translateY(-100%);
-                 animation: slideDown 1s ease-out 0.8s forwards;">
-        <header><a href="#body"><h1>Surf <br> Trip</h1></a></header>
-        <div class="navigation">
-            <label for="nav-toggle"
-                   class="nav-label"
-                   style=" background-color: #FBFBFF; 
-                        max-width: 12%;
-                        resize: none;
-                        align-items: center;">
-                   <img src="/assets/burger-menu.png" alt="burger menu icon" style="width: 100%;">
-            </label>
-            <input type="checkbox" id="nav-toggle">
-            <ul class="nav-buttons">
-                <li><a href="#body">Inicio</a></li>
-                <li><a href="#about">Nosotros</a></li>
-                <li><a href="#trips">Viajes</a></li>
-                <li><a href="#products">Productos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="login-buttons">
-                <button class="login-btn"><a href="login.html"   >Ingresar</a></button>
-                <button class="login-btn"><a href="register.html">Registrarse</a></button>
-        </div>
-    </nav>
+    <nav id="navbar"></nav>
+    <!-- Carrito -->
+    <aside id="cart-container" class="hidden">
+          <!-- Botón de cerrar -->
+      <button 
+            type="button"
+            class="cart-btn cart-btn-close"
+            aria-label="Cerrar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="#ff9900"
+              viewBox="0 0 24 24">
+        <path
+          d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 1 0 5.7 7.11L10.59 12l-4.89 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.89a1 1 0 0 0 1.41-1.41L13.41 12l4.89-4.89a1 1 0 0 0 0-1.4z"
+        />
+      </button>
+      <h3 class="cart-title">Carrito</h3>
+      <hr />
+    </aside>
     <!-- Hero -->
-    <main class="hero" style="position: relative;">
-        <img style="width: 100%;" src="/assets/main-hero-img cropped.png" alt="Main background image"/>
-        <div class="hero-text">
-          <h2 class="hero-title">Tu próxima ola te espera. <br> <span>Nosotros te preparamos.</span>  </h2>
-        </div>
-    </main>
+    <main id="hero" style="position: relative"></main>
     <!-- About -->
-    <section class="about" id="about"></section>
-    <!-- Productos -->
-    <section class="trips" id="trips">
-        <h2 class="section-title" id="trips-title">Nuestros viajes</h2>
-        <p style="width: 95%">Organizamos surf trips a destinos increíbles, tanto para los que recién empiezan como para los más pro!</p>
-        <div class="trips-cards-container" id="trips-container">
-
-        </div>
-    </section>
+    <section id="about" class="about"></section>
     <!-- Productos -->
     <section id="products">
-        <h2 class="section-title">🏄‍♂️TABLAS</h2>
-        <p style="width: 95%;">Podes encontrar variedad de tablas en nuestra tienda!</p>
-        <small> Todas con envío gratis ;) </small>
-        <div id="products-cards-container">
-
-        </div>
+      <h2 class="section-title">🏄‍♂️TABLAS</h2>
+      <p class="section-text">
+        Podes encontrar variedad de tablas en nuestra tienda!
+      </p>
+      <div id="products-cards-container"></div>
+      <button id="show-more-products-btn" class="show-more-btn" type="button">
+        Ver más
+      </button>
     </section>
-    <!-- Efecto blur antes de la sección de contacto -->
-    <div id="contact-blur" style="border: none; z-index: -1; height: 10px; background: linear-gradient(to bottom, #badde8 0%, #2d334a 100%);"></div>
+    <div class="producto-comprado">
+      
+    </div>
+    <!-- Viajes -->
+    <section id="trips" class="trips">
+      <h2 class="section-title" id="trips-title">Nuestros viajes</h2>
+      <p class="section-text">
+        Organizamos surf trips a destinos increíbles, tanto para los que recién
+        empiezan como para los más pro!
+      </p>
+      <div id="trips-container" class="trips-cards-container"></div>
+      <button id="show-more-trips-btn" class="show-more-btn" type="button">
+        Ver más
+      </button>
+    </section>
     <!-- Contacto -->
     <section class="contact" id="contact"></section>
     <!-- Footer -->
-    <footer>
-        <small>Hecho por: Valentin Párraga.</small>
+    <footer id="footer">
     </footer>
-</body>
-    <!-- JAVASCRIPT -->
-    <script src="./js/main.js"></script>
-
+  </body>
+  <!-- JAVASCRIPT -->
+  <script type = "module" src="./js/main.js" ></script>
+  <script type = "module" src="./js/cart.js"></script>
 </html>

@@ -15,44 +15,47 @@
 }
 
 :root {
-  --title: #272343;
-  --text: #2d334a; 
-  --tertiary: #badde8;
-  --button: #ff7403;
-  --main-color: #feffff;
-  --secondary-color: #e3f6f5;
+  --background: #fffffe;
+  --title: #232f43;
+  --text: #096567; 
+  /* --tertiary: #bacbe8; */
+  /* --button: #ff7403; */
+  --button: #fca33d;
   --text-white: #FBFBFF;
   --text-black: #040F16;
+  --tertiary: #ef4565;
 }
+
+
+
 
 body{
-  background-color: var(--tertiary);
+  background: #FFD194;
+  background: linear-gradient(to bottom, #fdff9f 0%, rgba(112, 190, 245, 1) 20%);
 }
 
-button{
-  color: var(--text);
-  background-color: var(--button);
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  font-size: 80%;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
+/* Overlay body */
+body::before{
+  content: "";
+  position: fixed;
+  display: none;
+  background-color: rgb(35, 35, 35, 0.3);
+  backdrop-filter: blur(0);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
 }
-header h1 {
-  text-align: center;
-  text-transform: capitalize;
-  color:var(--title);
-  font-family: "Instrument Serif", serif;
-  font-weight: 800;
-  font-size: 1.5em;
+
+body.overlay::before{
+  display: block;
+  background-color: rgb(35, 35, 35, 0.3);
+  backdrop-filter: blur(4px);
 }
+
 hr{
   border: 1px solid var(--button);
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -62,10 +65,6 @@ li{
 }
 textarea {
   resize: none;
-}
-nav {
-  border: 1px solid var(--button); 
-  background-color: var(--tertiary);
 }
 iframe {
  max-width: 100%;
@@ -87,10 +86,17 @@ label, select, option{
   color: var(--title);
   text-align: center;
 }
-.about h2
-.trips h2 
-.products h2{
-  color: var(--title);
-  font-size: 2em;
-  font-weight: 700;
+.section-text{
+  color: var(--text-white);
+  font-weight: 600;
+  text-align: center;
+  align-self: center;
+  max-width: 80%;
+}
+
+.hidden{
+  display: none;
+}
+.active{
+  display: block;
 }
